@@ -1,0 +1,21 @@
+*{
+    text-align: center;
+    /* margin: 100px; */
+}
+
+body{
+    /* background: linear-gradient(135deg,); */
+    margin: 0 20px;
+    background: url('https://i.pinimg.com/474x/9c/e8/2b/9ce82be6470e7080f9fc3b6575eac0ea.jpg')
+}
+
+h1{
+    margin: 50px 0;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+    border: 1px solid white;
+    border-radius: 100px;
+}

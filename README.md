@@ -1,172 +1,47 @@
-# Phase 1 Project Guidelines
 
-## Learning Goals
 
-- Design and architect features across a frontend
-- Communicate and collaborate in a technical environment
-- Integrate JavaScript and an external API
-- Debug issues in small- to medium-sized projects
-- Build and iterate on a project MVP
+# TOP TIER PAWZ
+Top Tier Pawz is a web application that allows you to generate a new cat whenever your bored.
 
-## Introduction
+## Getting Started
 
-Welcome to JavaScript Project Mode!
+To run this project on your local machine, follow these steps:
 
-You’ve worked so hard to get here and have learned a ton. Now it's time to bring
-it all together!
+1. *Clone the Repository*: 
+git clone (the URL for the repo)
 
-For this project, you're going build a Single Page Application (**SPA**).
-Building this application will be challenging because it will integrate
-everything you've learned up to this point. Your frontend will be built with
-HTML, CSS, and JavaScript and will communicate with a public API.
+2. *Navigate to the Project Folder*:
+cd random cats images
 
-### Project Requirements
+3. *Open in a Web Browser*:
+- Right-click on index.html.
+- Select "Open with" and choose your preferred web browser.
+- The web application should open in your browser.
 
-1. Your app must be a HTML/CSS/JS frontend that accesses data from a public API.
-   All interactions between the client and the API should be handled
-   asynchronously and use JSON as the communication format.
+4. *Interact with the Application*
+To interat with the application 'click on the generate new cat' to get a new cat
 
-2. Your entire app must run on a single page. There should be NO redirects. In
-   other words, your project will contain a single HTML file.
+5. *Explore the Code*:
+- Feel free to explore the HTML, CSS, and JavaScript files to understand the project structure and functionality.
 
-3. Your app needs to incorporate at least 3 separate event listeners
-   (DOMContentLoaded, click, change, submit, etc).
+## Prerequisites
 
-4. Some interactivity is required. This could be as simple as adding a "like"
-   button or adding comments. These interactions do not need to persist after
-   reloading the page.
+- You need a web browser (e.g., Google Chrome, Mozilla Firefox) to open and run this web application.
 
-5. Follow good coding practices. Keep your code DRY (Do not repeat yourself) by
-   utilizing functions to abstract repetitive code.
+That's it! You should now be able to run the random cat images web application locally on your computer.
 
-### Stretch Goals
+Feel free to make any additional adjustments to the instructions based on the actual setup and requirements of your project.
 
-1. Use [json-server][] in your project to persist your app's interactivity.
+---
 
-## Strategy, Timeline, and Tips
+## License
 
-### Planning
+MIT License
 
-- Plan out your features
-- Develop user stories
-  - “As [ a user ], I want [ to perform this action ] so that
-    [ I can accomplish this goal ].”
-  - Features should not need you there to explain them to users
-- Plan out the structure of your JSON requests
+Copyright © 2023 Hazel Njoki
 
-### Project Pitches
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-Before you start working on your project, you'll pitch your project idea to your
-instructors for approval and feedback.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-For your project pitch, you should include:
-
-- The basic story of your application
-- The core features of your MVP
-- The API data you'll be using and how you'll use it
-- Challenges you expect to face
-- How you are meeting the requirements of the project
-
-Feel free to send this pitch to your instructor via slack asynchronously.
-
-### MVP ASAP
-
-- Build a Minimum Viable Product (MVP) as quickly as possible.
-  - Pick an API and explore it early on to ensure it will work for your need
-
-### Instructor Guidance
-
-You should strive to solve problems independently, but you also shouldn't waste
-your time stuck on a problem. A good guideline for a small bug is the rule of
-10s:
-
-- 10 minutes debugging the code
-- 10 minutes using Google and StackOverflow to try to find an answer
-- 10 minutes asking your fellow students for help
-- Asking an instructor
-
-If you seek out instructor guidance on your design from the start, they might
-help steer you into design and architectural decisions that will help you down
-the road. That will also give the instructors context for what your app is
-supposed to do, so you won't need to explain everything to them when asking for
-help debugging.
-
-### Guidelines for Staying Organized
-
-**Write down** the decisions you make about your project. This will not only
-help you think more clearly, it will also help you communicate your project to
-instructors when asking for help. In addition to writing everything down, we
-also recommend the following to help stay organized and on track:
-
-- Describe/sketch your ideas (use diagrams!).
-- Start by creating a frontend directory with the basic files you'll need
-- Next, build enough code to get some API data to work with. Don't worry about
-  building all of your async code yet, just get to the point where you can
-  access one endpoint on an API, then start working on getting that data
-  displayed.
-- Then, continue to build additional async code and frontend features.
-- Continue building features one by one.
-
-Check in with your instructors to make sure your scope and timeline are
-manageable.
-
-### JSON Server Instructions
-
-> **Note**: Using `json-server` is a stretch goal, so make sure you have a
-> working MVP before trying to set up `json-server`!
-
-You can use this [json-server template][] to generate your backend code. Using
-this template will make it easier to deploy your backend later on.
-
-[json-server template]: https://github.com/learn-co-curriculum/json-server-template
-
-If you prefer, instead of using the template, you can create a `db.json` file
-with a structure in the root of your project that looks like this:
-
-```json
-{
-  "toys": [
-    {
-      "id": 1,
-      "name": "Woody",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 8
-    },
-    {
-      "id": 2,
-      "name": "Buzz Lightyear",
-      "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 14
-    }
-  ]
-}
-```
-
-Then, assuming you have `json-server` installed globally, you can run this
-command to run the server:
-
-```console
-$ json-server --watch db.json
-```
-
-Whatever top-level keys exist in your `db.json` file will determine the routes
-available. In the example above, since we have a key of `toys` pointing to an
-array of toy objects, `json-server` will generate the following routes:
-
-- `GET /toys`
-- `POST /toys`
-- `GET /toys/:id`
-- `PATCH /toys/:id`
-- `DELETE /toys/:id`
-
-You can consult the [json-server docs][] for more information.
-
-[json-server docs]: https://www.npmjs.com/package/json-server
-
-## Resources
-
-- [Public APIs](https://github.com/public-apis/public-apis)
-- [Fun APIs](https://apilist.fun/)
-- [json-server][]
-
-[json-server]: https://www.npmjs.com/package/json-server
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
