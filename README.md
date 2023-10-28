@@ -11,7 +11,7 @@ To run this project on your local machine, follow these steps:
 git clone (the URL for the repo)
 
 2. *Navigate to the Project Folder*:
-cd random cats images
+cd top tier pawz
 
 3. *Open in a Web Browser*:
 - Right-click on index.html.
